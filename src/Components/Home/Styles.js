@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core";
 export const styles = makeStyles((theme) => {
     return {
         root: {
-
+            maxWidth: '80vh'
         },
         hero: {
             background: '#f30000',

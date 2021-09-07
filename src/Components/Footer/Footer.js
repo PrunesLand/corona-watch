@@ -1,11 +1,15 @@
-import { Typography } from '@material-ui/core'
+import { Container, Typography } from '@material-ui/core'
 import React from 'react'
+import { styles } from './Styles'
 
 const Footer = () => {
+
+    const classes = styles()
+
     return (
-        <div>
-            <Typography>This is footer</Typography>
-        </div>
+        <Container className={classes.root}>
+            <Typography align='center' > &copy; {new Date().getFullYear()} Corona Watch</Typography>
+        </Container>
     )
 }
 

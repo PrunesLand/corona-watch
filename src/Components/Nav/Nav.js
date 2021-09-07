@@ -9,7 +9,7 @@ const Nav = ({ children }) => {
     return (
         <div>
             <AppBar className={classes.appBar} position='fixed'>
-                <Typography>Title</Typography>
+                <Typography align='center' variant='h5' className={classes.title}>Corona Watch</Typography>
             </AppBar>
             <div className={classes.page}>
                 <div className={classes.toolbar}></div>

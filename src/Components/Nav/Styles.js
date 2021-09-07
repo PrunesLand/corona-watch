@@ -8,14 +8,20 @@ export const styles = makeStyles((theme) => {
             margin: 0
         },
         page: {
-
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center'
         },
-        toolbar: {
-
-        },
+        toolbar: theme.mixins.toolbar,
         appBar: {
             background: '#999',
-            height: theme.spacing(7)
+            height: theme.spacing(10),
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        },
+        title: {
+
         }
     }
 })
