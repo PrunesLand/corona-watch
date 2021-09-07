@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { createTheme, ThemeProvider } from "@material-ui/core";
+import Home from "./Components/Home/Home";
+import Nav from "./Components/Nav/Nav";
+
+const theme = createTheme({
+
+  typography: {
+    useNextVariants: true,
+    fontFamily: 'Poppins',
+    fontWeightLight: 400,
+    fontWeightRegular: 400,
+    fontWeightMedium: 400,
+    fontWeightBold: 400,
+  }
+})
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Nav>
+        <Home />
+      </Nav>
+    </ThemeProvider>
   );
 }
 
