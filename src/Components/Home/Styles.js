@@ -23,10 +23,37 @@ export const styles = makeStyles((theme) => {
         },
         contMd: {
             height: '15vh',
-            background: '#555'
+            background: '#555',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column'
         },
-        gridItem: {
+        contLrg: {
+            height: '35vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'center'
+        },
+        gridItem2: {
+            padding: theme.spacing(1)
+        },
+        tips: {
 
+        },
+        tipsItem: {
+            height: theme.spacing(15),
+
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column'
+        },
+        icon: {
+            height: theme.spacing(6),
+            padding: theme.spacing(1)
         }
     }
 })
