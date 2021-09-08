@@ -75,9 +75,9 @@ const Home = () => {
                 </Grid>
                 <Grid item xs={12} className={classes.gridItem}>
                     <Container className={classes.contLrg}>
-                        <Typography variant='body2' className={classes.gridItem2}>Official data collected from the <a className={classes.links} href='https://data.covid19.go.id/public/index.html'>Indonesian Government</a> </Typography>
-                        <Typography variant='body2' className={classes.gridItem2}>API Endpoints created by <a className={classes.links} href='https://github.com/Reynadi531'>Reynadi531</a></Typography>
-                        <Typography className={classes.text1}>Website made by <a className={classes.links} href='https://github.com/PrunesLand'>PrunesLand</a></Typography>
+                        <Typography variant='body2' className={classes.gridItem2}>Official data collected from the <a className={classes.links} href='https://data.covid19.go.id/public/index.html' target='_blank' rel="noreferrer">Indonesian Government</a> </Typography>
+                        <Typography variant='body2' className={classes.gridItem2}>API Endpoints created by <a target='_blank' rel="noreferrer" className={classes.links} href='https://github.com/Reynadi531'>Reynadi531</a></Typography>
+                        <Typography className={classes.text1}>Website made by <a className={classes.links} target='_blank' rel="noreferrer" href='https://github.com/PrunesLand'>PrunesLand</a></Typography>
                     </Container>
                 </Grid>
             </Grid >
