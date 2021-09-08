@@ -6,9 +6,11 @@ export const styles = makeStyles((theme) => {
             maxWidth: '80vh'
         },
         hero: {
-
+            height: theme.spacing(40),
             textAlign: 'center',
-            height: '50vh',
+            [theme.breakpoints.down('sm')]: {
+                height: '50vh',
+            },
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -16,12 +18,16 @@ export const styles = makeStyles((theme) => {
         },
         text1: {
             padding: theme.spacing(2),
+            fontSize: theme.spacing(4),
             [theme.breakpoints.down('sm')]: {
                 fontSize: theme.spacing(3)
             }
         },
         text2: {
-            fontSize: theme.spacing(8)
+            fontSize: theme.spacing(8),
+            [theme.breakpoints.down('sm')]: {
+                fontSize: theme.spacing(6)
+            }
         },
         contMd: {
             height: '15vh',
@@ -32,7 +38,7 @@ export const styles = makeStyles((theme) => {
             flexDirection: 'column'
         },
         contLrg: {
-            height: '35vh',
+            height: '30vh',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -40,14 +46,18 @@ export const styles = makeStyles((theme) => {
             textAlign: 'center'
         },
         gridItem2: {
-            padding: theme.spacing(1)
+            padding: theme.spacing(1),
+            fontSize: theme.spacing(2.5),
+            [theme.breakpoints.down('sm')]: {
+                fontSize: theme.typography.body2.fontSize
+            }
         },
         tips: {
 
         },
         tipsItem: {
             height: theme.spacing(15),
-
+            background: '#e0e0e0',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -75,5 +85,15 @@ export const styles = makeStyles((theme) => {
         greyDark: {
             background: theme.palette.secondary.dark
         },
+        tipsText: {
+            fontSize: theme.typography.body1.fontSize,
+            [theme.breakpoints.down('sm')]: {
+                fontSize: theme.typography.body2.fontSize
+            }
+        },
+        links: {
+            color: '#000',
+        }
+
     }
 })

@@ -54,19 +54,19 @@ const Home = () => {
                             <Grid item xs={4} className={classes.gridItem2}>
                                 <Paper className={classes.tipsItem}>
                                     <img src={vaccine} alt='Vaccination' className={classes.icon} />
-                                    <Typography variant='body2' align='center'>Get Vaccinated.</Typography>
+                                    <Typography className={classes.tipsText}>Get Vaccinated.</Typography>
                                 </Paper>
                             </Grid>
                             <Grid item xs={4} className={classes.gridItem2}>
                                 <Paper className={classes.tipsItem}>
                                     <img src={mask} alt='Wear a Mask' className={classes.icon} />
-                                    <Typography variant='body2' align='center'>Wear A Mask.</Typography>
+                                    <Typography className={classes.tipsText}>Wear A Mask.</Typography>
                                 </Paper>
                             </Grid>
                             <Grid item xs={4} className={classes.gridItem2}>
                                 <Paper className={classes.tipsItem}>
                                     <img src={s_distance} alt='Social Distance' className={classes.icon} />
-                                    <Typography variant='body2' align='center' >Social Distance.</Typography>
+                                    <Typography className={classes.tipsText}>Social Distance.</Typography>
                                 </Paper>
                             </Grid>
 
@@ -75,9 +75,9 @@ const Home = () => {
                 </Grid>
                 <Grid item xs={12} className={classes.gridItem}>
                     <Container className={classes.contLrg}>
-                        <Typography variant='body2' className={classes.gridItem2}>Official data collected from the <a href='https://data.covid19.go.id/public/index.html'>Indonesian Government</a> </Typography>
-                        <Typography variant='body2' className={classes.gridItem2}>API Endpoints created by <a href='https://github.com/Reynadi531'>Reynadi531</a></Typography>
-                        <Typography variant='h5' className={classes.gridItem2}>Website made by <a href='https://github.com/PrunesLand'>PrunesLand</a></Typography>
+                        <Typography variant='body2' className={classes.gridItem2}>Official data collected from the <a className={classes.links} href='https://data.covid19.go.id/public/index.html'>Indonesian Government</a> </Typography>
+                        <Typography variant='body2' className={classes.gridItem2}>API Endpoints created by <a className={classes.links} href='https://github.com/Reynadi531'>Reynadi531</a></Typography>
+                        <Typography className={classes.text1}>Website made by <a className={classes.links} href='https://github.com/PrunesLand'>PrunesLand</a></Typography>
                     </Container>
                 </Grid>
             </Grid >

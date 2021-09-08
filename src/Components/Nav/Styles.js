@@ -10,18 +10,19 @@ export const styles = makeStyles((theme) => {
         page: {
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center'
+            alignItems: 'center',
+
         },
         toolbar: theme.mixins.toolbar,
         appBar: {
-            background: '#999',
+            background: '#e0e0e0',
             height: theme.spacing(10),
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center'
         },
         title: {
-
+            color: theme.palette.text.primary
         }
     }
 })

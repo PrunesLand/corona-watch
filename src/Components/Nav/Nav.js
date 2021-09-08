@@ -8,10 +8,11 @@ const Nav = ({ children }) => {
 
     return (
         <div>
-            <AppBar className={classes.appBar} position='fixed'>
-                <Typography align='center' variant='h5' className={classes.title}>Corona Watch</Typography>
+            <AppBar className={classes.appBar} position='fixed' elevation={0}>
+                <Typography align='center' variant='h4' className={classes.title}>Corona Watch</Typography>
             </AppBar>
             <div className={classes.page}>
+                <div className={classes.toolbar}></div>
                 <div className={classes.toolbar}></div>
                 {children}
             </div>
