@@ -5,6 +5,8 @@ import { styles } from './Styles'
 import s_distance from '../../Images/keep-distance.svg'
 import mask from '../../Images/mask.svg'
 import vaccine from '../../Images/syringe.svg'
+import clsx from 'clsx'
+
 const Home = () => {
     const [data, setData] = useState('')
     const classes = styles()
@@ -27,27 +29,27 @@ const Home = () => {
         <div className={classes.root}>
             <Grid container>
                 <Grid item xs={12}>
-                    <Container className={classes.hero}>
+                    <Container className={clsx(classes.hero, classes.redMain)}>
                         <Typography className={classes.text1}>As of {data.tanggal},</Typography>
                         <Typography className={classes.text2}>{data.positif}</Typography>
-                        <Typography className={classes.text1}>Cases recorded in Indonesia</Typography>
+                        <Typography className={classes.text1}>New cases recorded in Indonesia</Typography>
                     </Container>
                 </Grid>
                 <Grid item xs={6} className={classes.gridItem}>
-                    <Container className={classes.contMd}>
-                        <Typography>{data.sembuh}</Typography>
-                        <Typography>Recovered</Typography>
+                    <Container className={clsx(classes.contMd, classes.redLight)}>
+                        <Typography variant='h4'>{data.sembuh}</Typography>
+                        <Typography variant='body2'>Recovered</Typography>
                     </Container>
                 </Grid>
                 <Grid item xs={6} className={classes.gridItem}>
-                    <Container className={classes.contMd}>
-                        <Typography>{data.meninggal}</Typography>
-                        <Typography>Deaths</Typography>
+                    <Container className={clsx(classes.contMd, classes.redDark)}>
+                        <Typography variant='h4'>{data.meninggal}</Typography>
+                        <Typography variant='body2'>Deaths</Typography>
                     </Container>
                 </Grid>
                 <Grid item xs={12} className={classes.gridItem}>
-                    <Container className={classes.contLrg}>
-                        <Typography className={classes.text1} align='center'>Tips to Stay Protected</Typography>
+                    <Container className={clsx(classes.contLrg)}>
+                        <Typography className={classes.text1} align='center'>Tips to Stay Protected:</Typography>
                         <Grid container className={classes.tips} >
                             <Grid item xs={4} className={classes.gridItem2}>
                                 <Paper className={classes.tipsItem}>

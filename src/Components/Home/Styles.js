@@ -6,7 +6,7 @@ export const styles = makeStyles((theme) => {
             maxWidth: '80vh'
         },
         hero: {
-            background: '#f30000',
+
             textAlign: 'center',
             height: '50vh',
             display: 'flex',
@@ -15,11 +15,13 @@ export const styles = makeStyles((theme) => {
             flexDirection: 'column'
         },
         text1: {
-            padding: theme.spacing(5),
-            fontSize: theme.spacing(2.5)
+            padding: theme.spacing(2),
+            [theme.breakpoints.down('sm')]: {
+                fontSize: theme.spacing(3)
+            }
         },
         text2: {
-            fontSize: theme.spacing(4)
+            fontSize: theme.spacing(8)
         },
         contMd: {
             height: '15vh',
@@ -54,6 +56,24 @@ export const styles = makeStyles((theme) => {
         icon: {
             height: theme.spacing(6),
             padding: theme.spacing(1)
-        }
+        },
+        redMain: {
+            background: theme.palette.primary.main
+        },
+        redLight: {
+            background: theme.palette.primary.light
+        },
+        redDark: {
+            background: theme.palette.primary.dark
+        },
+        greyMain: {
+            background: theme.palette.secondary.main
+        },
+        greyLight: {
+            background: theme.palette.secondary.light
+        },
+        greyDark: {
+            background: theme.palette.secondary.dark
+        },
     }
 })

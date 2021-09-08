@@ -11,7 +11,19 @@ const theme = createTheme({
     fontWeightRegular: 400,
     fontWeightMedium: 400,
     fontWeightBold: 400,
-  }
+  },
+  palette: {
+    primary: {
+      main: '#ef5350',
+      light: '#ff867c',
+      dark: '#b61827'
+    },
+    secondary: {
+      main: '#607d8b',
+      light: '#8eacbb',
+      dark: '#34515e'
+    }
+  },
 })
 
 function App() {
