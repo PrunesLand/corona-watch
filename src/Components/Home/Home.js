@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Container, Grid, Paper, Typography } from '@material-ui/core'
-import * as api from '../../API/index'
 import { styles } from './Styles'
 import s_distance from '../../Images/keep-distance.svg'
 import mask from '../../Images/mask.svg'
@@ -13,9 +12,10 @@ const Home = () => {
 
     const getData = async () => {
         try {
-            const res = await api.fetchData()
-            setData(res.data.penambahan)
-            console.log(res.data.penambahan)
+            let response = await fetch('https://apicovid19indonesia-v2.vercel.app/api/indonesia/more') // fetches data from public api
+            let result = await response.json() // converts fetched data into json format
+            console.log(result.penambahan)
+            setData(result.penambahan) // sets 'data' with object of daily rise 
         } catch (error) {
             console.log(error)
         }
